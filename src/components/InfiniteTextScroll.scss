@@ -1,0 +1,33 @@
+@keyframes animate_text {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.scrolling_text {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    background-color: #FBF8E2;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 2rem;
+}
+
+.text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .10rem;
+    color: #171511;
+    padding: 0.45rem 0;
+    animation: animate_text 30s linear infinite;
+}
+
+.text span::after{
+  content: " • ";
+}

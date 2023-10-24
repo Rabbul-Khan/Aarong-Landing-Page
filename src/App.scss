@@ -1,0 +1,10 @@
+:root {
+    --main-bg-color: #FF5501;
+    --main-font-color: #ffffff;
+}
+
+body{
+    padding: 1.75rem 2rem;
+    background-color: var(--main-bg-color);
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+}
